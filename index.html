@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crud coches</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <div class="container mt-5">
-        <form onsubmit="event.preventDefault()">
+        <form id="limpiar-form" onsubmit="event.preventDefault()">
             <div class="form-group">
                 <label for="marca">Marca</label>
                 <input type="text" class="form-control" id="marca" placeholder="Marca">
@@ -37,6 +37,7 @@
             <table id="user-table" class="table">
                 <thead>
                     <tr>
+                        <th>id</th>
                         <th>Marca</th>
                         <th>Modelo</th>
                         <th>Color</th>
